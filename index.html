@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Becky's Calculator</title>
-    <style src="styles.css"></style>
+    <link rel="stylesheet" href="styles.css"></link>
     <script src="main.js"></script>
   </head>
   <body>
@@ -14,7 +14,11 @@
     </header>
     <main>
       <div class="calculator">
-        <div class="calculator__input">Please imput calculation here</div>
+        <div class="calculator__window">
+          Please imput calculation here:
+          <div class="calculator__window--input">input</div>
+          <div class="calculator__window--output">output</div>
+        </div>
         <div class="calculator__pad">
           <div class="calculator__button" class="calculator__button--zero">
             0

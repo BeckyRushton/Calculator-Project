@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap");
+$title-font: "Nanum Gothic", "Impact", sans-serif;
+$main-font: "Montserrat", "Arial", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.title {
+  font-family: $title-font;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.calculator {
+  font-family: $main-font;
+  border: 2px solid black;
+  &__window {
+    border: 2px solid green;
+  }
+  &__pad {
+    border: 2px solid red;
+  }
+  &__button {
+    border: 2px solid blue;
+  }
+}

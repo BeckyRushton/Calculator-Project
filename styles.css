@@ -1,1 +1,27 @@
-/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: "Nanum Gothic", "Impact", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.calculator {
+  font-family: "Montserrat", "Arial", sans-serif;
+  border: 2px solid black;
+}
+.calculator__window {
+  border: 2px solid green;
+}
+.calculator__pad {
+  border: 2px solid red;
+}
+.calculator__button {
+  border: 2px solid blue;
+}/*# sourceMappingURL=styles.css.map */
