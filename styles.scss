@@ -1,28 +1,158 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap");
 $title-font: "Nanum Gothic", "Impact", sans-serif;
 $main-font: "Montserrat", "Arial", sans-serif;
+$text-theme: rgb(56, 56, 55);
+$background-theme: rgb(60, 40, 116);
+$button-theme-num: rgb(226, 231, 177);
+$button-theme-method: rgb(219, 163, 78);
+$button-theme-other: rgb(226, 148, 174);
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+// Title ------
 .title {
   font-family: $title-font;
-  font-size: 2rem;
-  text-align: center;
+  color: $background-theme;
+  font-size: 3rem;
   font-weight: bold;
+  margin: 20px;
+  &__tagline {
+    font-family: $main-font;
+
+    font-size: 1.2rem;
+  }
 }
+
+// Calculator ------
 .calculator {
   font-family: $main-font;
-  border: 2px solid black;
+  background-color: $background-theme;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 500px;
+
   &__window {
-    border: 2px solid green;
+    background-color: rgb(235, 248, 247);
+    color: $text-theme;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
   &__pad {
-    border: 2px solid red;
+    color: $text-theme;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 20px;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "ac ac back back"
+      "seven eight nine multiply"
+      "four five six divide"
+      "one two three subtract"
+      "zero zero zero plus"
+      "percentage decimal equals equals";
   }
   &__button {
-    border: 2px solid blue;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  #calculator__button--zero {
+    grid-area: zero;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--one {
+    grid-area: one;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--two {
+    grid-area: two;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--three {
+    grid-area: three;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--four {
+    grid-area: four;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--five {
+    grid-area: five;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--six {
+    grid-area: six;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--seven {
+    grid-area: seven;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--eight {
+    grid-area: eight;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--nine {
+    grid-area: nine;
+    background-color: $button-theme-num;
+  }
+  #calculator__button--plus {
+    grid-area: plus;
+    background-color: $button-theme-method;
+  }
+  #calculator__button--divide {
+    grid-area: divide;
+    background-color: $button-theme-method;
+  }
+  #calculator__button--multiply {
+    grid-area: multiply;
+    background-color: $button-theme-method;
+  }
+  #calculator__button--subtract {
+    grid-area: subtract;
+    background-color: $button-theme-method;
+  }
+  #calculator__button--back {
+    grid-area: back;
+    background-color: $button-theme-other;
+  }
+  #calculator__button--equals {
+    grid-area: equals;
+    background-color: $button-theme-other;
+  }
+  #calculator__button--ac {
+    grid-area: ac;
+    background-color: $button-theme-other;
+  }
+  #calculator__button--percentage {
+    grid-area: percentage;
+    background-color: $button-theme-other;
+  }
+  #calculator__button--decimal {
+    grid-area: decimal;
+    background-color: $button-theme-other;
   }
 }

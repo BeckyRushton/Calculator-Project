@@ -5,23 +5,137 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   font-family: "Nanum Gothic", "Impact", sans-serif;
-  font-size: 2rem;
-  text-align: center;
+  color: rgb(60, 40, 116);
+  font-size: 3rem;
   font-weight: bold;
+  margin: 20px;
+}
+.title__tagline {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 1.2rem;
 }
 
 .calculator {
   font-family: "Montserrat", "Arial", sans-serif;
-  border: 2px solid black;
+  background-color: rgb(60, 40, 116);
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 500px;
 }
 .calculator__window {
-  border: 2px solid green;
+  background-color: rgb(235, 248, 247);
+  color: rgb(56, 56, 55);
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 .calculator__pad {
-  border: 2px solid red;
+  color: rgb(56, 56, 55);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 20px;
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "ac ac back back" "seven eight nine multiply" "four five six divide" "one two three subtract" "zero zero zero plus" "percentage decimal equals equals";
 }
 .calculator__button {
-  border: 2px solid blue;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.calculator #calculator__button--zero {
+  grid-area: zero;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--one {
+  grid-area: one;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--two {
+  grid-area: two;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--three {
+  grid-area: three;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--four {
+  grid-area: four;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--five {
+  grid-area: five;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--six {
+  grid-area: six;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--seven {
+  grid-area: seven;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--eight {
+  grid-area: eight;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--nine {
+  grid-area: nine;
+  background-color: rgb(226, 231, 177);
+}
+.calculator #calculator__button--plus {
+  grid-area: plus;
+  background-color: rgb(219, 163, 78);
+}
+.calculator #calculator__button--divide {
+  grid-area: divide;
+  background-color: rgb(219, 163, 78);
+}
+.calculator #calculator__button--multiply {
+  grid-area: multiply;
+  background-color: rgb(219, 163, 78);
+}
+.calculator #calculator__button--subtract {
+  grid-area: subtract;
+  background-color: rgb(219, 163, 78);
+}
+.calculator #calculator__button--back {
+  grid-area: back;
+  background-color: rgb(226, 148, 174);
+}
+.calculator #calculator__button--equals {
+  grid-area: equals;
+  background-color: rgb(226, 148, 174);
+}
+.calculator #calculator__button--ac {
+  grid-area: ac;
+  background-color: rgb(226, 148, 174);
+}
+.calculator #calculator__button--percentage {
+  grid-area: percentage;
+  background-color: rgb(226, 148, 174);
+}
+.calculator #calculator__button--decimal {
+  grid-area: decimal;
+  background-color: rgb(226, 148, 174);
 }/*# sourceMappingURL=styles.css.map */

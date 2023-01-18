@@ -10,5 +10,5 @@ The main functions of the calculator are the following:
 The calculator is purpose-built for mobile devices but is also responsive for other device sizes.
 
 Dev notes:
-18 buttons
+19 buttons
 1 input/output window
