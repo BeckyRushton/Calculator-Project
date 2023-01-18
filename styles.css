@@ -43,6 +43,9 @@ body {
   width: 100%;
   font-weight: bold;
   font-size: 1.2rem;
+  height: 130px;
+  border-radius: 5px;
+  padding: 10px;
 }
 .calculator__pad {
   color: rgb(56, 56, 55);
@@ -50,7 +53,7 @@ body {
   font-size: 1.2rem;
   padding: 20px;
   display: grid;
-  width: 90%;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "ac ac back back" "seven eight nine multiply" "four five six divide" "one two three subtract" "zero zero zero plus" "percentage decimal equals equals";
