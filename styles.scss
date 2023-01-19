@@ -3,9 +3,9 @@ $title-font: "Nanum Gothic", "Impact", sans-serif;
 $main-font: "Montserrat", "Arial", sans-serif;
 $text-theme: rgb(56, 56, 55);
 $background-theme: rgb(60, 40, 116);
-$button-theme-num: rgb(226, 231, 177);
-$button-theme-method: rgb(219, 163, 78);
-$button-theme-other: rgb(226, 148, 174);
+$button-theme-num: rgb(243, 231, 166);
+$button-theme-method: rgb(247, 181, 83);
+$button-theme-other: rgb(255, 147, 183);
 
 * {
   padding: 0;
@@ -51,7 +51,8 @@ body {
     color: $text-theme;
     width: 100%;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    text-align: end;
     height: 130px;
     border-radius: 5px;
     padding: 10px;
