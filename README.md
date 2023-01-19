@@ -9,6 +9,13 @@ The main functions of the calculator are the following:
 
 The calculator is purpose-built for mobile devices but is also responsive for other device sizes.
 
-Dev notes:
-19 buttons
-1 input/output window
+Dev notes/To dos:
+
+Replace 0 on calc window when you start typing your math problem
+
+Add functions to the command buttons so they do their task in the window
+
+Take the string of maths we input and be able to use that string to execute the math problem
+(example - if I click 1 + 1, I need to be able to press the equals button which turns the "string into numbers/sum and output the answer onto the window)
+
+Add responsiveness in scss
