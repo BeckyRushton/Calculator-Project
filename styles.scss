@@ -73,7 +73,7 @@ body {
       "four five six divide"
       "one two three subtract"
       "zero zero zero plus"
-      "percentage decimal equals equals";
+      "decimal decimal equals equals";
   }
   &__button {
     border-radius: 30px;
@@ -143,6 +143,8 @@ body {
   }
   #calculator__button--back {
     grid-area: back;
+    font-size: 2rem;
+    font-weight: bold;
     background-color: $button-theme-other;
   }
   #calculator__button--equals {
@@ -153,12 +155,11 @@ body {
     grid-area: ac;
     background-color: $button-theme-other;
   }
-  #calculator__button--percentage {
-    grid-area: percentage;
-    background-color: $button-theme-other;
-  }
+
   #calculator__button--decimal {
     grid-area: decimal;
     background-color: $button-theme-other;
+    font-size: 2rem;
+    font-weight: bold;
   }
 }
