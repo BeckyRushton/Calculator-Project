@@ -54,6 +54,8 @@ body {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .calculator__pad {
   color: rgb(56, 56, 55);

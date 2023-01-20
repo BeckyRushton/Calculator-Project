@@ -11,6 +11,7 @@ const backButton = document.getElementById("calculator__button--back");
 const equalsButton = document.getElementById("calculator__button--equals");
 
 let numberOne;
+let numberTwo;
 let method;
 // Functions
 
@@ -43,15 +44,25 @@ const handleMethod = (event) => {
   windowCalc.innerText += method;
 };
 
-// const handleEquals = () => {
-//   const sumString = windowCalc.innerText;
-//   console.log(sumString);
-//   const newString = sumString.split("");
-//   console.log(newString);
-//   windowCalc.innerText = newString.join("");
-//   console.log(Number(windowCalc.innerText));
-//   console.log(method);
-// };
+const handleEquals = () => {
+  const sumString = windowCalc.innerText.split(method);
+  numberOne = parseFloat(sumString[0]);
+  numberTwo = parseFloat(sumString[1]);
+
+  if (method == "+") {
+    windowCalc.innerText = numberOne + numberTwo;
+  } else if (method == "-") {
+    windowCalc.innerText = numberOne - numberTwo;
+  } else if (method == "*") {
+    windowCalc.innerText = numberOne * numberTwo;
+  } else if (method == "/") {
+    windowCalc.innerText = numberOne / numberTwo;
+  } else {
+    windowCalc.innerText = 0;
+  }
+
+  method = "";
+};
 
 // Interactions
 
@@ -67,4 +78,4 @@ methodButtons.forEach((methodButton) => {
   methodButton.addEventListener("click", handleMethod);
 });
 
-// equalsButton.addEventListener("click", handleEquals);
+equalsButton.addEventListener("click", handleEquals);
