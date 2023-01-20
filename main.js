@@ -10,8 +10,6 @@ const allClear = document.getElementById("calculator__button--ac");
 const backButton = document.getElementById("calculator__button--back");
 const equalsButton = document.getElementById("calculator__button--equals");
 
-let numberOne;
-let numberTwo;
 let method;
 // Functions
 
