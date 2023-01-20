@@ -7,6 +7,11 @@ const inputButtons = document.querySelectorAll(".calculator__input");
 const windowCalc = document.getElementById("calcwindow");
 const allClear = document.getElementById("calculator__button--ac");
 const backButton = document.getElementById("calculator__button--back");
+const multiplyButton = document.getElementById("calculator__button--multiply");
+const divideButton = document.getElementById("calculator__button--divide");
+const plusButton = document.getElementById("calculator__button--plus");
+const subtractButton = document.getElementById("calculator__button--subtract");
+const equalsButton = document.getElementById("calculator__button--equals");
 
 // Functions
 
