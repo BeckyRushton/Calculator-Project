@@ -11,11 +11,10 @@ The calculator is purpose-built for mobile devices but is also responsive for ot
 
 Dev notes/To dos:
 
-Replace 0 on calc window when you start typing your math problem
-
 Add functions to the command buttons so they do their task in the window
 
 Take the string of maths we input and be able to use that string to execute the math problem
 (example - if I click 1 + 1, I need to be able to press the equals button which turns the "string into numbers/sum and output the answer onto the window)
+map for this one
 
 Add responsiveness in scss as at the moment it isnt working
