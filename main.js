@@ -10,7 +10,11 @@ const allClear = document.getElementById("calculator__button--ac");
 // Functions
 
 const handleClick = (inputButton) => {
-  windowCalc.innerText += inputButton.innerText;
+  if (windowCalc.innerText == 0) {
+    windowCalc.innerText = inputButton.innerText;
+  } else {
+    windowCalc.innerText += inputButton.innerText;
+  }
 };
 
 const handleClear = () => {
