@@ -152,4 +152,32 @@ body {
   background-color: rgb(255, 147, 183);
   font-size: 2rem;
   font-weight: bold;
+}
+
+@media screen and (min-width: 900px) {
+  .title {
+    font-size: 4rem;
+  }
+  .title__tagline {
+    font-size: 2rem;
+  }
+  .calculator {
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+    height: 750px;
+  }
+  .calculator__window {
+    height: 170px;
+    padding: 20px;
+    font-size: 3.5rem;
+  }
+  .calculator__pad {
+    height: 500px;
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .calculator__button {
+    margin: 6px;
+  }
 }/*# sourceMappingURL=styles.css.map */

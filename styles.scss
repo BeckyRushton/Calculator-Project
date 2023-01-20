@@ -170,3 +170,35 @@ body {
     font-weight: bold;
   }
 }
+
+// Larger screens
+
+@media screen and (min-width: 900px) {
+  .title {
+    font-size: 4rem;
+
+    &__tagline {
+      font-size: 2rem;
+    }
+  }
+  .calculator {
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+    height: 750px;
+
+    &__window {
+      height: 170px;
+      padding: 20px;
+      font-size: 3.5rem;
+    }
+    &__pad {
+      height: 500px;
+      padding: 10px;
+      font-size: 2rem;
+    }
+    &__button {
+      margin: 6px;
+    }
+  }
+}
