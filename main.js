@@ -24,15 +24,11 @@ const handleClear = () => {
 
 const handleBack = () => {
   if (windowCalc.innerText.length < 2) {
-    console.log(windowCalc.innerText);
     windowCalc.innerText = "0";
   } else {
     const sumString = windowCalc.innerText;
-    console.log(sumString);
     const newString = sumString.split("");
-    console.log(newString);
     newString.pop();
-    console.log(newString);
     windowCalc.innerText = newString.join("");
   }
 };
