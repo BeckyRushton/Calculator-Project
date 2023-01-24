@@ -1,6 +1,3 @@
-// Test
-console.log("hello world");
-
 // Variables - selecting all the classes/ID's I need for the functions and interactions
 
 const inputButtons = document.querySelectorAll(".calculator__input");
