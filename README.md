@@ -4,7 +4,7 @@ The calculator is purpose-built for mobile devices but is also responsive for la
 
 The main functions of the calculator are the following:
 
-1. Have at least 2 inputs
+1. Input 2 numbers as a sum (eg. 1+1)
 2. Calculate the input problem
 3. Output the answer
 
