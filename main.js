@@ -34,7 +34,7 @@ const handleClear = () => {
 // handleBack looks at the length of the innerText of the calc window and if it is less than 2
 // it will replace it with the default of 0
 // else it looks at the input string and splits it into an array without commas and then removes
-// the last item of the array (pop) and joins them back together as the new array
+// the last item of the array (pop) and joins them back together as the new string
 const handleBack = () => {
   if (windowCalc.innerText.length < 2) {
     windowCalc.innerText = "0";
@@ -56,8 +56,8 @@ const handleMethod = (event) => {
   windowCalc.innerText += method;
 };
 
-// handleEquals takes the string we have entered into the calc window and splits it by the method
-// Then number0ne and numberTwo are converted into number types (float allows decimals) as an array
+// handleEquals takes the string we have entered into the calc window and splits it into an array by the method
+// Then number0ne and numberTwo are extracted from the array and then converted into number types (float allows decimals)
 // to be used in the conditional statement section next
 // if and else if statements look for which method has been input to run the corresponding sum and
 // replace the sum with the answer on the calc window
@@ -78,7 +78,7 @@ const handleEquals = () => {
   } else {
     windowCalc.innerText = 0;
   }
-  // method is outside of the conditional statements as it has to be changed for each statement
+  // method is outside of the conditional statements as it has to be changed for each statement to reset method at the end when press equals
   method = "";
 };
 
