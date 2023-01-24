@@ -1,7 +1,7 @@
 // Test
 console.log("hello world");
 
-// Variables
+// Variables - selecting all the classes/ID's I need for the functions and interactions
 
 const inputButtons = document.querySelectorAll(".calculator__input");
 const methodButtons = document.querySelectorAll(".calculator__method");
@@ -10,9 +10,17 @@ const allClear = document.getElementById("calculator__button--ac");
 const backButton = document.getElementById("calculator__button--back");
 const equalsButton = document.getElementById("calculator__button--equals");
 
+// method is a global variable as it is interchangable in the handleMethod and handleEquals functions
 let method;
+
 // Functions
 
+// handleClick handles the input buttons pressed on the calculator pad to show whatever is
+// in the innerText in the calculator window
+// It is set to 0 by default and if 0 is in the window, if replaces it with the innerText of
+// the input button we press
+// Else adds whatever else we input to the string in the calculator window rather than
+// replacing it using += between the first input and the second input
 const handleClick = (inputButton) => {
   if (windowCalc.innerText == 0) {
     windowCalc.innerText = inputButton.innerText;
@@ -21,10 +29,15 @@ const handleClick = (inputButton) => {
   }
 };
 
+// handleClear is used when we want to replace the window innerText back to the default of 0
 const handleClear = () => {
   windowCalc.innerText = 0;
 };
 
+// handleBack looks at the length of the innerText of the calc window and if it is less than 2
+// it will replace it with the default of 0
+// else it looks at the input string and splits it into an array without commas and then removes
+// the last item of the array (pop) and joins them back together as the new array
 const handleBack = () => {
   if (windowCalc.innerText.length < 2) {
     windowCalc.innerText = "0";
