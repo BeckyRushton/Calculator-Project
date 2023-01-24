@@ -65,6 +65,10 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  // I hid the content that doesn't fit in the window with overflow: hidden so that whatever
+  // doesn't fit is cut and I added text-overflow: ellipsis to show that there is more to the
+  // number but it is not shown on the calc window
+
   &__pad {
     color: $text-theme;
     font-weight: bold;
