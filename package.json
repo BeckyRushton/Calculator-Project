@@ -1,0 +1,23 @@
+{
+  "name": "calculator-project",
+  "version": "1.0.0",
+  "description": "The aim of this project was to build a calculator web app using HTML, SCSS, and JS.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeckyRushton/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeckyRushton/calculator/issues"
+  },
+  "homepage": "https://github.com/BeckyRushton/calculator#readme",
+  "devDependencies": {
+    "cypress": "^12.4.1"
+  }
+}
